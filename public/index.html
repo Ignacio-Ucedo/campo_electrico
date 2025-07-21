@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.86/dist/themes/light.css" /> -->
+    <link rel="stylesheet" href="/src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campo Eléctrico</title>
+  </head>
+  <body>
+  <div id="configPanel" >
+    <h3>Editar Objeto</h3>
+    <label>Masa: 
+      <input id="scaleMassInput" type="range" min="0.1" max="10" step="0.1">
+      <output id="scaleMassOutput"><span>1.0</span><small> kg</small></output>
+    </label>
+
+
+    <label>Carga: 
+      <input id="scaleChargeInput" type="range" min="-50" max="50" step="1">
+      <output id="scaleChargeOutput"><span>0.0</span><small> μC</small></output>
+    </label>
+
+
+    <!-- <label>Color: <input id="colorInput" type="color"></label> -->
+
+    <span>Coordenadas [m]</span>
+    <label>x <input class= "coordinateInput" id="xInput" type="number" step="0.1"></label>
+    <label>y <input class= "coordinateInput" id="yInput" type="number" step="0.1"></label>
+    <label>z <input class= "coordinateInput" id="zInput" type="number" step="0.1"></label>
+
+    <button id="duplicateBtn">Duplicar</button>
+    <button id="deleteBtn">Eliminar</button>
+  </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
